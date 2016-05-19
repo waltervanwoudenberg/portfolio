@@ -1,0 +1,50 @@
+.wrapper {
+  background-color: #151515;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+}
+
+ .switch-button{
+  width: 400px;
+  height: 40px;
+  text-align: center;
+  will-change: transform;
+  cursor: pointer;
+  transition: .3s ease all;
+  border: 1px solid white;
+  &-case{
+    display: inline-block;
+    background: none;
+    width: 49%;
+    height: 100%;
+    color: white;
+    position: relative;
+    border: none;
+    transition: .3s ease all;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 1px;
+    &:hover{
+      color: grey;
+      cursor: pointer;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .active {
+    color: #151515;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    transition: .3s ease-out all;
+    &-case{
+      color: #151515;
+    }
+  }
+}
