@@ -1,3 +1,5 @@
+var is_on = true;
+
 $(document).ready(function() {
 
   // set the background to a random color
@@ -10,6 +12,10 @@ $(document).ready(function() {
 
   // when the animation iterates
   $("h1").on('webkitAnimationIteration oanimationiteration msAnimationIteration animationiteration ', function() {
+    if (!is_on){
+      $("svg").attr('class', 'animation-off');
+      return false;
+    }
 
     // replace the header with a random word
     var word = words[Math.floor(Math.random() * words.length)] + "!";

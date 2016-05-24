@@ -9,12 +9,17 @@ function switchLeft(){
   switchBtnRight.classList.remove('active-case');
   switchBtnLeft.classList.add('active-case');
   activeSwitch.style.left             = '0%';
+  $("#bio").removeClass("hidden");
+  $("#projects").addClass("hidden");
 }
 
 function switchRight(){
   switchBtnRight.classList.add('active-case');
   switchBtnLeft.classList.remove('active-case');
   activeSwitch.style.left             = '50%';
+  //show #projects .removeClass('hidden');
+  $("#projects").removeClass("hidden");
+  $("#bio").addClass("hidden");
 }
 
 switchBtnLeft.addEventListener('click', function(){
