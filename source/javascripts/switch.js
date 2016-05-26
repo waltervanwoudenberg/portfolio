@@ -9,8 +9,8 @@ function switchLeft(){
   switchBtnRight.classList.remove('active-case');
   switchBtnLeft.classList.add('active-case');
   activeSwitch.style.left             = '0%';
-  $("#bio").removeClass("hidden");
-  $("#projects").addClass("hidden");
+  $("#box-one").removeClass("hidden");
+  $("#box-two").addClass("hidden");
 }
 
 function switchRight(){
@@ -18,8 +18,8 @@ function switchRight(){
   switchBtnLeft.classList.remove('active-case');
   activeSwitch.style.left             = '50%';
   //show #projects .removeClass('hidden');
-  $("#projects").removeClass("hidden");
-  $("#bio").addClass("hidden");
+  $("#box-two").removeClass("hidden");
+  $("#box-one").addClass("hidden");
 }
 
 switchBtnLeft.addEventListener('click', function(){

@@ -1,0 +1,77 @@
+.terminal {
+  width: 80%;
+  margin: 0 auto 2rem;
+  box-shadow: 0 0.25rem 0.5rem #12181e;
+  border-radius: 0 0 0.1rem 0.1rem;
+  margin-top: 20px;
+}
+
+.bar {
+    background: #191919;
+    height: 36px;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.term-btn {
+    background: #f6b73e;
+    position: relative;
+    margin-left: 38px;
+    top: 12px;
+  }
+
+  .term-btn::before {
+    background: #f55551;
+    margin-left: -20px;
+  }
+
+  .term-btn::before, .term-btn::after {
+    content: " ";
+    position: absolute;
+}
+
+.term-btn, .term-btn::before, .term-btn::after {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    display: block;
+}
+
+.term-btn::after {
+    background: #32c146;
+    margin-left: 20px;
+}
+
+.term-body {
+    height: 300px;
+    background: #232323;
+    padding: 18px;
+}
+
+.wrapper-1 {
+  background: #25313e;
+}
+
+.typingCursor {
+  line-height: 28px;
+font-size: 26px;
+color: #00fd55;
+letter-spacing: 2px;
+}
+
+.typingCursor::before {
+    content: "＞";
+    margin-right: 10px;
+}
+
+.typingCursor::after {
+    content: '';
+    width: 9px;
+    height: 28px;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: bottom;
+    background-color: #00fd55;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
