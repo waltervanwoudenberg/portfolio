@@ -29,4 +29,4 @@ $(document).ready(function() {
 
 // the 10,000 most comment words, taken from http://goo.gl
 // /hfjFkz
-words = [ "He is Awesome", "He is Amazing", "He is Super Cool" ];
+words = [ "Teamplayer", "", "He is Super Cool" ];
